@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shaq Height Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Shaq Height → Age Estimator</h1>
+
+        <label>Enter a height (cm):</label>
+        <input type="number" id="heightInput" placeholder="e.g., 183" oninput="updateShaq()">
+
+        <button onclick="calculate()">Calculate Age</button>
+
+        <div id="result"></div>
+
+        <!-- Animated Shaq Silhouette -->
+        <div class="shaq-wrapper">
+            <div id="shaqSilhouette"></div>
+            <p id="shaqHeightLabel"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

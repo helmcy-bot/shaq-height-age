@@ -1,0 +1,102 @@
+body {
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Main card */
+.container {
+    background: #1d1d1d;
+    padding: 30px;
+    width: 400px;
+    border-radius: 14px;
+    box-shadow: 0 0 20px #000;
+}
+
+/* Text styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #f39c12;
+    color: black;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #d98a0e;
+}
+
+/* Result text */
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Shaq silhouette */
+.shaq-wrapper {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* The silhouette box */
+#shaqSilhouette {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    background-image: url('https://i.imgur.com/98fYc3X.png'); /* silhouette PNG */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: transform 0.5s ease;
+}
+
+/* Height label */
+#shaqHeightLabel {
+    margin-top: 10px;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* 📱 MOBILE RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input, button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #shaqSilhouette {
+        width: 90px;
+        height: 90px;
+    }
+}
